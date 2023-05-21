@@ -39,6 +39,7 @@ body{
 .txtVerde{
     color:green;
 }
+
 .contenedor-header header nav a{
     display: inline-block;
     text-decoration: none;
@@ -257,7 +258,7 @@ body{
     font-weight: bold;
 }
 .servicios .info-servicios{
-    max-width: 800px;
+    max-width: 700px;
     margin: auto;
 }
 .servicios .info-servicios table{
@@ -283,7 +284,11 @@ body{
     text-transform: uppercase;
 }
 .servicios .info-servicios p{
-    line-height: 30px;
+    line-height: 20px;
+}
+
+a {
+    text-decoration: none;
 }
 
 /* ********** */
