@@ -242,7 +242,7 @@ body{
     font-size: 5rem;
 }
 .servicios .fila .col .contenedor-titulo .info{
-    margin-left: 30px;
+    margin-left: 20px;
 }
 .servicios .fila .col .contenedor-titulo .info .frase{
     color: #ff1133;
@@ -277,8 +277,8 @@ body{
     color: #ff1133;
     font-size: 2.5rem;
     margin-bottom: 20px;
-
 }
+
 .servicios .info-servicios h3{
     margin-bottom: 20px;
     text-transform: uppercase;
