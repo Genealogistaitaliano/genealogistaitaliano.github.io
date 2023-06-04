@@ -68,7 +68,7 @@ body{
 /* *********** */
 .inicio{
     height: 100vh;
-    background: linear-gradient(rgba(0,1,3,.5), rgba(0,0,0,.7)), url(img/fondo.jpg);
+    background: linear-gradient(rgba(0,1,3,.5), rgba(0,0,0,.7));
     background-size: cover;
     background-position: center center;
     color: #fff;
@@ -153,18 +153,11 @@ body{
     display: flex;
     align-items:center
 }
-.nosotros .fila .col .contenedor-titulo .numero{
-    color: #ff1133;
-    font-weight: bold;
-    display: block;
-    font-size: 5rem;
-}
+
 .nosotros .fila .col .contenedor-titulo .info{
     margin-left: 30px;
 }
-.nosotros .fila .col .contenedor-titulo .info .frase{
-    color: #ff1133;
-}
+
 .nosotros .fila .col .contenedor-titulo .info h2{
     font-size: 3rem;
 }
@@ -205,17 +198,60 @@ body{
 /* SERVICIOS */
 /* ********** */
 
+.container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .card {
+    background: white;
+    color: black;
+    width: 270px;
+    margin: 10px;
+    border-radius: 15px;
+  }
+  
+  .card-image {
+    height: 170px;
+    margin-bottom: 15px;
+    border-radius: 15px 15px 0 0;
+  }
+  
+  .card h2 {
+  padding: 10px;
+  text-align: center;
+  }
+  
+  .card p {
+    padding: 10px;
+  }
+  
+  .card a {
+    background-color: black;
+    color: white;
+    padding: 15px 20px;
+    display: block;
+    text-align: center;
+    margin: 20px 50px;
+    text-decoration: none;
+  }
+  
+  .card:hover {
+    background-color: rgb(62,62,62);
+    color: white;
+    cursor: pointer;
+    transform: scale(1.03);
+    transition: all 1s ease;
+  }
+
+
 .servicios{
-    color: #fff;
+    background: linear-gradient(rgba(0,1,3,.5), rgba(0,0,0,.7));
+    color: white;
     position: relative;
 }
-.servicios .contenido-seccion{
-    background:linear-gradient( rgba(0, 14, 41, 0.6), rgba(0, 7, 78, 0.7)),url(img/fondo-servicios.jpg);
-    background-size: cover;
-    background-position: center center;
-    margin: auto;
-    padding: 0 20px;
-}
+
 .servicios .contenido-seccion .fila{
     max-width: 1100px;
     margin: auto;
@@ -236,7 +272,6 @@ body{
     align-items: center;
 }
 .servicios .fila .col .contenedor-titulo .numero{
-    color: #ff1133;
     font-weight: bold;
     display: block;
     font-size: 5rem;
@@ -287,9 +322,6 @@ body{
     line-height: 20px;
 }
 
-a {
-    text-decoration: none;
-}
 
 /* ********** */
 /* OPINIONES */
@@ -336,94 +368,6 @@ a {
 }
 
 /* *********** */
-/* CONTACTO */
-/* *********** */
-.contacto{
-    color: black;
-    background:#dde1e9;
-    background-size: cover;
-    background-position: center center;
-    padding: 100px 20px;
-
-}
-.contacto .contenido-seccion{
-    max-width: 800px;
-    margin: auto;
-}
-
-.contacto .contenedor-titulo{
-    display: flex;
-    align-items: center;
-    width: fit-content;
-    margin: auto;
-}
-.contacto  .contenedor-titulo .numero{
-    color: #ff1133;
-    font-weight: bold;
-    display: block;
-    font-size: 5rem;
-}
-.contacto .contenedor-titulo .info{
-    margin-left: 30px;
-}
-.contacto .contenedor-titulo .info .frase{
-    color: #ff1133;
-}
-.contacto .contenedor-titulo .info h2{
-    font-size: 3rem;
-}
-.contacto .fila{
-    display: flex;
-    margin-top: 50px;
-    justify-content: space-between;
-}
-.contacto .fila .col{
-    width: 48%;
-}
-.contacto .fila input{
-    width: 100%;
-    padding: 15px;
-    border: none;
-    border-radius: 5px;
-    font-size: 20px;
-    outline: none;
-}
-.contacto textarea{
-    display: block;
-    margin-top: 20px;
-    padding: 15px;
-    font-size: 20px;
-    outline: none;
-    width: 100%;
-    height: 200px;
-}
-
-.contacto button{
-    display: block;
-    width: fit-content;
-    margin: auto;
-    margin-top: 30px;
-    border: none;
-    background-color: #ff1133;
-    color: #fff;
-    font-size: 18px;
-    padding: 10px 25px;
-    border-radius: 5px;
-    cursor: pointer;
-}
-.contacto .fila-datos{
-    display: flex;
-    justify-content: space-around;
-    margin-top: 100px;
-    font-size: 18px;
-    text-align: center;
-}
-.contacto i{
-    color: #ff1133;
-    display: inline-block;
-    margin-right: 10px;
-}
-/* *********** */
 /* FOOTER */
 /* *********** */
 footer{
@@ -445,6 +389,15 @@ footer .info a{
     color: white;
     display: inline-block;
     margin: 0 15px;
+}
+
+.col {
+    color: white;
+}
+
+.col i{
+    color: #ff1133;
+    display: inline-block;
 }
 /* *********** */
 /* RESPONSIVE */
@@ -500,48 +453,20 @@ footer .info a{
     .servicios .contenido-seccion .fila .col{
        width: 100%;
     }
-    .comodidades .fila{
-        display: block;
-    }
-    .comodidades .fila .col{
-        width: 100%;
-    }
-    .comodidades .fila .col img{
-        max-width: 200px;
-    }
-
-    .equipo .fila{
-        display: block;
-    }
-    .equipo .fila .col{
-        width: 100%;
-        margin-bottom: 20px;
-    }
-    .equipo .fila .col img{
-        max-height: 200px;
-    }
-    .equipo .fila .info{
-        max-width: 250px;
-        margin: auto;
-    }
-    .contacto .fila{
-        display: block;
-    }
-    .contacto .fila .col{
-        width: 100%;
-        margin-bottom: 20px;
-    }
-    .contacto .fila-datos{
-        display: block;
-    }
-    .contacto .fila-datos .col{
-        margin-bottom: 20px;
-    }
+   
     footer .info{
         display: block;
         text-align: center;
     }
     footer .info p{
         margin-bottom: 10px;
+    }
+
+    footer .col {
+        display: block;
+        text-align: center;
+    }
+    footer .info i {
+        margin-bottom: 15px;
     }
 }
