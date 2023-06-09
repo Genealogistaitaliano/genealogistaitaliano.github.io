@@ -155,15 +155,14 @@ body{
 }
 
 .nosotros .fila .col .contenedor-titulo .info h2{
+    padding: 20px;
     font-size: 3rem;
 }
 .nosotros .fila .col p{
    margin-bottom: 10px;
    line-height: 28px;
 }
-.nosotros .fila .col .p-especial{
-    font-weight: bold;
-}
+
 .nosotros hr{
     margin-bottom: 30px;
 }
