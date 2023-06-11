@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="actas,italianas,atto,atti,nascita,matrimonio,genealogista,bautismo,battesimo,traducciones,asseverazione,apostillas">
+    <meta name="description" content="BUSQUEDA GENEALOGICA Y ACTAS ITALIANAS">
+    <meta name="author" content="ACTAS ITALIANAS VCM">
+    <meta name="copyright" content="Actas Italianas VCM">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" />
+    <link rel="stylesheet" href="src/style2.css">
+    <title>ACTAS ITALIANAS VCM</title>
+    <link rel="icon" href="icono.ico">
+
+    <style>
+        body {
+          background: linear-gradient(rgba(0,1,3,.5), rgba(0,0,0,.7)), url("img/comune2.jpeg");
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-attachment: fixed;
+        }
+
+        .gallery {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          background-color: #dde1e9;
+          padding: 20px 20px 20px 20px;
+        }
+
+        .gallery a {
+          flex-basis: calc(30% - 10px);
+          margin-bottom: 20px;
+          display: block;
+        }
+
+        .gallery a img {
+          margin-top: 20px;
+          width: 100%;
+          border-radius: 5%;
+          box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.15);
+        } 
+
+        @media screen and (max-width: 600px) {
+        .image {
+        width: 100%;
+        height: auto;
+        }
+    }
+    </style>
+
+</head>
+<body>
+    <!-- MENU -->
+    <div class="contenedor-header">
+        <header>
+            <h2>ACTAS ITALIANAS<span class="txtVerde"> V</span>C</span><span class="txtRojo">M</span></h2>
+            <nav id="nav">
+                <a href="index.html" onclick="seleccionar()">Volver al inicio</a>
+            </nav>
+            <div class="redes">
+                <a href="https://www.facebook.com/genealogistaitaliano/" target="_blank">
+                    <i class="bi bi-facebook"></i>
+                </a>
+                <a href="https://www.instagram.com/genealogista.vcm/" target="_blank">
+                    <i class="bi bi-instagram"></i>
+                </a>
+                <a href="https://api.whatsapp.com/send?phone=393479037737" target="_blank">
+                    <i class="bi bi-whatsapp"></i>
+                </a>
+                <a href="mailto:actasitalianasvcm@gmail.com" target="_blank">
+                    <i class="bi bi-envelope-fill"></i>
+                </a>
+            </div>
+            <!-- Icono del menu responsive -->
+            <div id="icono-nav" class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="bi bi-list"></i>
+            </div>                
+        </header>
+    </div>
+
+    <!-- Galeria -->
+    <div class="gallery">
+        <a href="galeria/1.jpg" data-fancybox="gallery" data-caption="MUSEO DE LOS INMIGRANTES">
+          <img src="galeria/1.jpg" alt="Image 1">
+        </a>
+        <a href="galeria/2.jpg" data-fancybox="gallery" data-caption="Image 2">
+          <img src="galeria/2.jpg" alt="Image 2">
+        </a>
+        <a href="galeria/3.jpg" data-fancybox="gallery" data-caption="Image 3">
+          <img src="galeria/3.jpg" alt="Image 3">
+        </a>
+        <a href="galeria/4.jpg" data-fancybox="gallery" data-caption="MUSEO DE LOS INMIGRANTES">
+          <img src="galeria/4.jpg" alt="Image 1">
+        </a>
+        <a href="galeria/5.jpg" data-fancybox="gallery" data-caption="Image 2">
+          <img src="galeria/5.jpg" alt="Image 2">
+        </a>
+        <a href="galeria/6.jpg" data-fancybox="gallery" data-caption="Image 3">
+          <img src="galeria/6.jpg" alt="Image 3">
+        </a>
+        <a href="galeria/7.jpg" data-fancybox="gallery" data-caption="MUSEO DE LOS INMIGRANTES">
+          <img src="galeria/7.jpg" alt="Image 1">
+        </a>
+        <a href="galeria/8.jpg" data-fancybox="gallery" data-caption="Image 2">
+          <img src="galeria/8.jpg" alt="Image 2">
+        </a>
+        <a href="galeria/9.jpg" data-fancybox="gallery" data-caption="Image 3">
+          <img src="galeria/9.jpg" alt="Image 3">
+        </a>
+        <a href="galeria/10.jpg" data-fancybox="gallery" data-caption="Image 3">
+          <img src="galeria/10.jpg" alt="Image 3">
+        </a>
+      </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="info">
+            <p>2006 - ACTAS ITALIANAS<span class="txtVerde"> V</span>C<span class="txtRojo">M</span><br>Todos los derechos reservados ©</p>
+            
+            <div class="col">
+                <i class="bi bi-geo-alt"></i>
+                Martin Coronado - Bs.As, Argentina
+            </div>
+            <div class="col">
+                <i class="bi bi-clock"></i>
+                Lunes a Sábado: 10:00hs - 19:00hs
+            </div>
+            
+            
+            <div class="redes">
+                <a href="https://www.facebook.com/genealogistaitaliano/" target="_blank">
+                    <i class="bi bi-facebook"></i>
+                </a>
+                <a href="https://www.instagram.com/genealogista.vcm/" target="_blank">
+                    <i class="bi bi-instagram"></i>
+                </a>
+                <a href="https://api.whatsapp.com/send?phone=393479037737" target="_blank">
+                    <i class="bi bi-whatsapp"></i>
+                </a>
+                <a href="mailto:actasitalianasvcm@gmail.com" target="_blank">
+                    <i class="bi bi-envelope-fill"></i>
+                </a>
+            </div>
+        </div>
+        <a href="https://api.whatsapp.com/send?phone=393479037737" class="btn-wsp" target="_blank">
+            <i class="bi bi-whatsapp"></i>
+        </a>
+    </footer>
+    <script>
+        $(document).ready(function() {
+          $('[data-fancybox="gallery"]').fancybox({
+            // Customize Fancybox options here
+          });
+        });
+      </script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+</body>
+</html>
